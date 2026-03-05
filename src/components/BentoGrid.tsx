@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import {
   Calendar,
   Globe,
@@ -57,7 +58,7 @@ const BentoGrid = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 auto-rows-[280px] lg:auto-rows-[320px]"
         >
           {/* Planner - Large */}
-          <div className="bento-animate bento-item lg:col-span-7 relative group overflow-hidden">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-7 relative group overflow-hidden">
             <img
               src={featurePlanner}
               alt="Smart trip planner"
@@ -77,10 +78,10 @@ const BentoGrid = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Trips */}
-          <div className="bento-animate bento-item lg:col-span-5 flex flex-col justify-between">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-5 flex flex-col justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
                 <Plane size={18} className="text-foreground" />
@@ -93,10 +94,10 @@ const BentoGrid = () => {
                 Generate a minimal travel capsule from your existing wardrobe. 10 pieces, 30 outfits.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Shopping */}
-          <div className="bento-animate bento-item lg:col-span-5 relative group overflow-hidden">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-5 relative group overflow-hidden">
             <img
               src={featureShopping}
               alt="Shopping insights"
@@ -116,10 +117,10 @@ const BentoGrid = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Insights */}
-          <div className="bento-animate bento-item lg:col-span-4 flex flex-col justify-between">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-4 flex flex-col justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
                 <TrendingUp size={18} className="text-foreground" />
@@ -132,10 +133,10 @@ const BentoGrid = () => {
                 Understand your wardrobe ROI. See which pieces earn their place.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Styling */}
-          <div className="bento-animate bento-item lg:col-span-3 flex flex-col justify-between">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-3 flex flex-col justify-between">
             <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
               <Palette size={18} className="text-foreground" />
             </div>
@@ -145,10 +146,10 @@ const BentoGrid = () => {
                 Book a session with certified stylists.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Community - Large */}
-          <div className="bento-animate bento-item lg:col-span-7 relative group overflow-hidden">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-7 relative group overflow-hidden">
             <img
               src={featureCommunity}
               alt="Style community"
@@ -168,17 +169,17 @@ const BentoGrid = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Vibes */}
-          <div className="bento-animate bento-item lg:col-span-2 flex flex-col justify-between items-center text-center">
+          <motion.div whileHover={{ y: -6, boxShadow: "0 40px 80px -20px hsla(0, 0%, 0%, 0.15)" }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }} className="bento-animate bento-item lg:col-span-2 flex flex-col justify-between items-center text-center">
             <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
               <Heart size={18} className="text-foreground" />
             </div>
             <div>
               <h3 className="text-sm font-medium text-foreground">Vibe Feed</h3>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
