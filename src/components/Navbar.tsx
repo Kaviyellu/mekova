@@ -1,5 +1,6 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -27,9 +28,13 @@ const Navbar = () => {
           <button className="hidden md:block text-sm text-muted-foreground hover:text-foreground transition-colors">
             Sign In
           </button>
-          <button className="hidden md:block bg-primary text-primary-foreground text-sm px-5 py-2 rounded-full hover:opacity-90 transition-opacity">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="hidden md:block bg-primary text-primary-foreground text-sm px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
+          >
             Get Started
-          </button>
+          </motion.button>
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden text-foreground"
@@ -39,23 +44,34 @@ const Navbar = () => {
         </div>
       </div>
 
-      {open && (
-        <div className="md:hidden glass-card border-t border-border/50 px-6 py-6 space-y-4 animate-fade-in">
-          {["Features", "Wardrobe", "Planner", "Community"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="block text-sm text-muted-foreground"
-              onClick={() => setOpen(false)}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="md:hidden glass-card border-t border-border/50 px-6 py-6 space-y-4 overflow-hidden"
+          >
+            {["Features", "Wardrobe", "Planner", "Community"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="block text-sm text-muted-foreground"
+                onClick={() => setOpen(false)}
+              >
+                {item}
+              </a>
+            ))}
+            <motion.button
+              whileTap={{ scale: 0.97 }}
+              className="w-full bg-primary text-primary-foreground text-sm px-5 py-2.5 rounded-full"
             >
-              {item}
-            </a>
-          ))}
-          <button className="w-full bg-primary text-primary-foreground text-sm px-5 py-2.5 rounded-full">
-            Get Started
-          </button>
-        </div>
-      )}
+              Get Started
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
