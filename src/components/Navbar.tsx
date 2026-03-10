@@ -13,7 +13,7 @@ const Navbar = () => {
         </span>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Features", "Wardrobe", "Planner", "Community"].map((item) => (
+          {["Features", "Wardrobe", "Planner", "Blog", "Community"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -53,7 +53,7 @@ const Navbar = () => {
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="md:hidden glass-card border-t border-border/50 px-6 py-6 space-y-4 overflow-hidden"
           >
-            {["Features", "Wardrobe", "Planner", "Community"].map((item) => (
+            {["Features", "Wardrobe", "Planner", "Blog", "Community"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
