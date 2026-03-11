@@ -183,7 +183,7 @@ const BentoGrid = () => {
               <div>
                 <h3 className="text-title text-foreground mb-2">Wardrobe Insights</h3>
                 <p className="text-muted-foreground">
-                  Cost per wear, ROI analytics, and usage patterns for every piece you own.
+                  Get Cost per wear, ROI analytics, and usage patterns for every piece you own.
                 </p>
               </div>
             </div>
