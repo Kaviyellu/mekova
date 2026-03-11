@@ -56,7 +56,7 @@ const HeroSection = () => {
             Mekova
           </h1>
           <p className="text-body-large text-muted-foreground max-w-xl mx-auto">
-            Digitise your wardrobe. Get AI-powered styling. Plan outfits for every moment.
+            Digitise your Wardrobe. Get Styled Looks. Plan Outfits for every moment.
           </p>
         </div>
 
@@ -68,24 +68,24 @@ const HeroSection = () => {
         >
           <img
             src={heroImage}
-            alt="Mekova - Digitise your wardrobe with AI"
+            alt="Mekova - Digitise your wardrobe"
             className="w-full h-full object-cover"
           />
 
           {/* Glassmorphic floating labels */}
           <div className="absolute top-6 left-6 glass-label animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <span className="flex items-center gap-2 text-foreground">
-              <Scan size={14} /> AI Scan
+              <Scan size={14} />  Scan & Upload
             </span>
           </div>
           <div className="absolute top-6 right-6 glass-label animate-fade-up" style={{ animationDelay: "0.8s" }}>
             <span className="flex items-center gap-2 text-foreground">
-              <Sparkles size={14} /> Smart Match
+              <Sparkles size={14} /> Smart Suggestions
             </span>
           </div>
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 glass-label animate-fade-up" style={{ animationDelay: "1s" }}>
             <span className="flex items-center gap-2 text-foreground">
-              <Wand2 size={14} /> Style Engine
+              <Wand2 size={14} /> Style Intelligence
             </span>
           </div>
         </div>
@@ -96,19 +96,19 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
           {[
             {
-              icon: Scan,
+              icon: Scan
               title: "Instant Digitisation",
-              desc: "Point your camera. AI identifies brand, color, fabric, and fit—building your digital closet in seconds.",
+              desc: "Point your camera. App identifies brand, color, fabric, and fit— building your digital closet in seconds.",
             },
             {
               icon: Sparkles,
-              title: "AI Suggestions",
-              desc: "Get outfit recommendations based on weather, calendar events, and your personal style DNA.",
+              title: "Smart Suggestions",
+              desc: "Get outfit recommendations based on weather, calendar events, and your personal style.",
             },
             {
               icon: Wand2,
-              title: "Style Engine",
-              desc: "Our proprietary algorithm learns what makes you feel confident and surfaces your best combinations.",
+              title: "Style Intelligence",
+              desc: "Our proprietary algorithm learns what makes you feel confident and suggests you context-ready outfit combinations.",
             },
           ].map((item, i) => (
             <div key={i} className="text-center md:text-left">

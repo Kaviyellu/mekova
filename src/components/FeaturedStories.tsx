@@ -37,8 +37,8 @@ const FeaturedStories = () => (
                 Shop Your Closet
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Rediscover hidden gems in your wardrobe. Kavita Gnyaneswari shares how to
-                find new outfit combinations from clothes you already own using Mekova.
+                Rediscover hidden gems in your wardrobe. Kavita Gnyaneswari shares how to find new outfit combinations
+                from clothes you already own.
               </p>
               <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all duration-300">
                 Read Story <ArrowRight size={16} />
