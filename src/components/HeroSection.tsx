@@ -96,7 +96,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
           {[
             {
-              icon: Scan
+              icon: Scan,
               title: "Instant Digitisation",
               desc: "Point your camera. App identifies brand, color, fabric, and fit— building your digital closet in seconds.",
             },
