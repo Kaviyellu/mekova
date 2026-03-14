@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SocialShareBar from "@/components/SocialShareBar";
 
 import titleImg from "@/assets/story-shop-closet-title.jpg";
 import img2 from "@/assets/story-shop-closet-2.jpg";
