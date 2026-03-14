@@ -100,6 +100,8 @@ const PackLikeAPro = () => (
         </div>
       </motion.div>
 
+      <SocialShareBar title="Pack Like a Pro: 30 Outfits in One Bag" />
+
       <StoryImage src={img2} alt="Stylish traveller at a train station" />
 
       <motion.p {...fadeUp} className="text-sm text-muted-foreground italic text-center -mt-6 mb-12">

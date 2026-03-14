@@ -114,6 +114,8 @@ const ShopYourCloset = () => (
         </div>
       </motion.div>
 
+      <SocialShareBar title="How To Shop Your Closet: The Amazing Spring Outfits You Already Own" />
+
       <StoryImage src={img2} alt="All outfits created from existing wardrobe" />
 
       <motion.p {...fadeUp} className="text-sm text-muted-foreground italic text-center -mt-6 mb-12">
