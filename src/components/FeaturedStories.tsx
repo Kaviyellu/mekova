@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import storyImage from "@/assets/story-shop-closet-title.jpg";
+import basicsImage from "@/assets/story-basics-title.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
