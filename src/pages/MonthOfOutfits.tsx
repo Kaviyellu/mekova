@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SocialShareBar from "@/components/SocialShareBar";
 
 import titleImg from "@/assets/story-basics-title.jpg";
 import img2 from "@/assets/story-basics-2.jpg";
@@ -99,6 +100,8 @@ const MonthOfOutfits = () => (
           </p>
         </div>
       </motion.div>
+
+      <SocialShareBar title="A Month of Outfit Ideas: How 4 New Basics Gave Me 33 New Looks" />
 
       <StoryImage src={img2} alt="33 outfit combinations from basics" />
 

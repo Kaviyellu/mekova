@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import SocialShareBar from "@/components/SocialShareBar";
 
 import titleImg from "@/assets/story-packing-title.jpg";
 import img2 from "@/assets/story-packing-2.jpg";
@@ -98,6 +99,8 @@ const PackLikeAPro = () => (
           </p>
         </div>
       </motion.div>
+
+      <SocialShareBar title="Pack Like a Pro: 30 Outfits in One Bag" />
 
       <StoryImage src={img2} alt="Stylish traveller at a train station" />
 
