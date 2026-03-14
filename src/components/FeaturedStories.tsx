@@ -19,7 +19,38 @@ const FeaturedStories = () => (
         <h2 className="text-headline text-foreground">Style Stories</h2>
       </motion.div>
 
+      {/* Story 1 */}
       <motion.div {...fadeUp}>
+        <Link
+          to="/stories/month-of-outfits"
+          className="group block glass-card overflow-hidden rounded-3xl border border-border/50 hover:border-border transition-all duration-500"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div className="aspect-[4/3] md:aspect-auto overflow-hidden">
+              <img
+                src={basicsImage}
+                alt="A Month of Outfit Ideas"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
+              <span className="text-caption text-muted-foreground mb-3">Featured Story</span>
+              <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 tracking-tight">
+                A Month of Outfits from 4 Basics
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
+                Kavita Gnyaneswari shows how 4 versatile black basics gave her 33 new looks — perfect for fashion-conscious students in Indian metro cities.
+              </p>
+              <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground group-hover:gap-3 transition-all duration-300">
+                Read Story <ArrowRight size={16} />
+              </span>
+            </div>
+          </div>
+        </Link>
+      </motion.div>
+
+      {/* Story 2 */}
+      <motion.div {...fadeUp} className="mt-8">
         <Link
           to="/stories/shop-your-closet"
           className="group block glass-card overflow-hidden rounded-3xl border border-border/50 hover:border-border transition-all duration-500"
@@ -33,7 +64,7 @@ const FeaturedStories = () => (
               />
             </div>
             <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
-              <span className="text-caption text-muted-foreground mb-3">Featured Story</span>
+              <span className="text-caption text-muted-foreground mb-3">Style Guide</span>
               <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4 tracking-tight">
                 Shop Your Closet
               </h3>
