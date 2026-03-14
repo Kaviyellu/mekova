@@ -101,6 +101,8 @@ const MonthOfOutfits = () => (
         </div>
       </motion.div>
 
+      <SocialShareBar title="A Month of Outfit Ideas: How 4 New Basics Gave Me 33 New Looks" />
+
       <StoryImage src={img2} alt="33 outfit combinations from basics" />
 
       <motion.p {...fadeUp} className="text-sm text-muted-foreground italic text-center -mt-6 mb-12">
