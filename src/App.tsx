@@ -8,6 +8,7 @@ import ShopYourCloset from "./pages/ShopYourCloset";
 import MonthOfOutfits from "./pages/MonthOfOutfits";
 import PackLikeAPro from "./pages/PackLikeAPro";
 import PitchDeck from "./pages/PitchDeck";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
