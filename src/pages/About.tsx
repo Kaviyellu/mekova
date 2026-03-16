@@ -27,15 +27,8 @@ const About = () => (
         >
           About Mekova
         </motion.p>
-        <motion.h1
-          custom={1}
-          initial="hidden"
-          animate="visible"
-          variants={fade}
-          className="text-display mb-8"
-        >
-          Where dressing becomes{" "}
-          <span className="text-gold">intentional.</span>
+        <motion.h1 custom={1} initial="hidden" animate="visible" variants={fade} className="text-display mb-12">
+          Where dressing becomes <span className="text-gold">intentional.</span>
         </motion.h1>
         <motion.p
           custom={2}
@@ -44,8 +37,8 @@ const About = () => (
           variants={fade}
           className="text-body-large text-muted-foreground max-w-2xl mx-auto"
         >
-          A platform transforming how people manage, style, and extend the life
-          of their wardrobes — putting clarity before consumption.
+          A platform transforming how people manage, style, and extend the life of their wardrobes — putting clarity
+          before consumption.
         </motion.p>
       </div>
     </section>
@@ -60,12 +53,9 @@ const About = () => (
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="text-caption text-muted-foreground mb-4">The Origin</p>
-          <h2 className="text-headline mb-6">
-            Born from a simple question.
-          </h2>
+          <h2 className="text-headline mb-6">Born from a simple question.</h2>
           <p className="text-body-large text-muted-foreground leading-relaxed">
-            Why do we keep buying more when we don't fully use what we already
-            own?
+            Why do we keep buying more when we don't fully use what we already own?
           </p>
         </motion.div>
 
@@ -76,13 +66,10 @@ const About = () => (
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="glass-card p-10"
         >
-          <p className="text-lg font-medium text-foreground mb-4">
-            Mekova is our answer.
-          </p>
+          <p className="text-lg font-medium text-foreground mb-4">Mekova is our answer.</p>
           <p className="text-muted-foreground leading-relaxed">
-            A Wardrobe Intelligence platform where every piece you own is
-            visible, styled, and worn with purpose. We help you wear better,
-            shop smarter, and reduce waste in a world designed to oversell.
+            A Wardrobe Intelligence platform where every piece you own is visible, styled, and worn with purpose. We
+            help you wear better, shop smarter, and reduce waste in a world designed to oversell.
           </p>
         </motion.div>
       </div>
@@ -101,35 +88,27 @@ const About = () => (
           {/* Ambient glow */}
           <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-gold/10 blur-3xl pointer-events-none" />
 
-          <p className="text-caption text-muted-foreground mb-6">
-            Founder's Note
-          </p>
+          <p className="text-caption text-muted-foreground mb-6">Founder's Note</p>
           <blockquote className="text-2xl md:text-3xl font-semibold tracking-tight text-foreground leading-snug mb-8">
             "Wardrobe full of clothes, yet nothing to wear?"
           </blockquote>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Hi, I'm Kavita — an IT professional, fashion enthusiast, working
-              woman, homemaker, and a mother of two. Every morning, my day
-              starts with millions of micro-decisions, including{" "}
-              <em>"What should I wear?"</em>
+              Hi, I'm Kavita — an IT professional, fashion enthusiast, working woman, homemaker, and a mother of two.
+              Every morning, my day starts with millions of micro-decisions, including <em>"What should I wear?"</em>
             </p>
             <p>
-              Despite having a full wardrobe, I often struggled to find the
-              right outfits — rushed mornings, wasted time, and an emotional
-              drain before the day even began. The problem isn't lack of
-              clothes. It's lack of clarity.
+              Despite having a full wardrobe, I often struggled to find the right outfits — rushed mornings, wasted
+              time, and an emotional drain before the day even began. The problem isn't lack of clothes. It's lack of
+              clarity.
             </p>
             <p>
-              I identified a gap between <strong>buying</strong> and{" "}
-              <strong>wearing</strong> — what we buy vs. what we actually wear.
-              Mekova bridges that gap: a simple, everyday tool to help you make
-              better wardrobe choices, dress better, and shop smarter.
+              I identified a gap between <strong>buying</strong> and <strong>wearing</strong> — what we buy vs. what we
+              actually wear. Mekova bridges that gap: a simple, everyday tool to help you make better wardrobe choices,
+              dress better, and shop smarter.
             </p>
           </div>
-          <p className="mt-8 text-sm font-medium text-foreground">
-            — Kavita, Founder of Mekova
-          </p>
+          <p className="mt-8 text-sm font-medium text-foreground">— Kavita, Founder of Mekova</p>
         </div>
       </motion.div>
     </section>
@@ -144,9 +123,7 @@ const About = () => (
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-16"
         >
-          <p className="text-caption text-muted-foreground mb-4">
-            What We Believe
-          </p>
+          <p className="text-caption text-muted-foreground mb-4">What We Believe</p>
           <h2 className="text-headline">Clarity over consumption.</h2>
         </motion.div>
 
@@ -175,9 +152,7 @@ const About = () => (
               className="glass-card p-8 group hover:shadow-lg transition-shadow duration-500"
             >
               <h3 className="text-title mb-3">{value.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                {value.desc}
-              </p>
+              <p className="text-muted-foreground leading-relaxed text-sm">{value.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -193,12 +168,9 @@ const About = () => (
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-3xl mx-auto text-center"
       >
-        <p className="text-caption text-primary-foreground/50 mb-6">
-          Our Mission
-        </p>
+        <p className="text-caption text-primary-foreground/50 mb-6">Our Mission</p>
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-primary-foreground leading-snug mb-6">
-          Turn the daily "What do I wear?" struggle into a calm, confident
-          moment.
+          Turn the daily "What do I wear?" struggle into a calm, confident moment.
         </h2>
         <p className="text-primary-foreground/60 text-lg">
           So you dress well, feel confident, and start every day put-together.
