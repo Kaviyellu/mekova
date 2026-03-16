@@ -8,6 +8,7 @@ import ShopYourCloset from "./pages/ShopYourCloset";
 import MonthOfOutfits from "./pages/MonthOfOutfits";
 import PackLikeAPro from "./pages/PackLikeAPro";
 import PitchDeck from "./pages/PitchDeck";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/stories/month-of-outfits" element={<MonthOfOutfits />} />
           <Route path="/stories/pack-like-a-pro" element={<PackLikeAPro />} />
           <Route path="/pitch" element={<PitchDeck />} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
